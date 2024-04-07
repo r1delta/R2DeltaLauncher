@@ -9,7 +9,6 @@
 #include "plugins/plugins.h"
 #include "plugins/pluginmanager.h"
 #include "ns_version.h"
-#include "core/vanilla.h"
 
 #include <any>
 
@@ -206,9 +205,6 @@ template <ScriptContext context> void SquirrelManager<context>::VMCreated(CSquir
 	defconst(m_pSQVM, "NS_VERSION_MINOR", version[1]);
 	defconst(m_pSQVM, "NS_VERSION_PATCH", version[2]);
 	defconst(m_pSQVM, "NS_VERSION_DEV", version[3]);
-
-	// define squirrel constant for if we are in vanilla-compatibility mode
-	defconst(m_pSQVM, "VANILLA", g_pVanillaCompatibility->GetVanillaCompatibility());
 
 	g_pSquirrel<context>->messageBuffer = new SquirrelMessageBuffer();
 	g_pPluginManager->InformSqvmCreated(newSqvm);
