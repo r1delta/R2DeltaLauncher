@@ -1,3 +1,5 @@
+This repo is a joke and has nothing to do with R1Delta, but if you're still interested you can follow development here https://discord.gg/9prxUNFp4n
+
 # NorthstarLauncher
 ![Build Status](https://github.com/R2Northstar/NorthstarLauncher/actions/workflows/ci.yml/badge.svg)
 
